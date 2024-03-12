@@ -1,0 +1,22 @@
+<script>
+    let admin={
+        login:"adminDima",
+        password:"jxtymckj;ysqgfhjkm",
+        checkLog:function(status,log,pwd)
+        {
+            if(this.login==log && this.password==pwd)
+                console.log(`Welcome ${this.login} for ${status}`);
+            else console.log(`Unknown login or password for ${status}`);
+        }
+    }
+    let user={
+        login:"anyuser",
+        password:"12345",
+    }
+
+   
+    let log=prompt("Input login");
+    let pwd=prompt("Input password");
+    admin.checkLog.call(admin,"admin",log,pwd);
+    admin.checkLog.apply(user,["user",log,pwd]);
+</script>

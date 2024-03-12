@@ -1,0 +1,10 @@
+<script>
+    arrOne=Array.from(Array(10),()=>{return Math.round(Math.random()*10)});
+    console.log(arrOne);
+    arrTwo=Array.from(Array(10),()=>{return Math.round(Math.random()*10)});
+    console.log(arrTwo);
+    //arrOne=arrOne.concat(arrTwo);
+    //console.log(arrOne);
+    arrOne=[...arrOne,100000,...arrTwo];
+    console.log(arrOne);
+</script>

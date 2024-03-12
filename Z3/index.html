@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Перевод из дюймов в сантиметры</h1>
+    <script>
+       /*  console.log("Zadacha 3");
+        let s="+";
+        for (let i=0; i<12; i++)
+            {
+                //console.log("Yoy are welcom");
+                s=s++
+               // console.log(" ");
+            }
+            console.log(s); */
+/*let inch=prompt('Введите стартовое значение в дюймах');
+if (isNaN(inch) || !Boolean(inch))
+{
+    alert("Я не могу это перевести");
+}
+else { 
+    let s=" ";
+    for (let i=inch; i<inch+10; i++)
+    {
+        let sm=inch*2.54;
+        s+=`   ${inch} дюймов составляют ${sm} сантиметоров`;
+    }
+    //alert(`${inch} дюймов составляют ${sm} сантиметоров`);
+    
+    //console.log(`${inch} дюймов составляют ${sm} сантиметоров`);
+    console.log(s)
+}
+ */
+/* Задача 3*/
+/* let num=1;
+let count=0;
+console.log(num);
+ while (true)
+ { 
+    num=+prompt('Введите положительное число');
+    if (num>0) count++
+    else break;
+  }
+  console.log(`Вы ввели ${count} положительных чисел`);*/
+
+/* Задача 4*/
+/*let num=1;
+let count=0;
+console.log(num);
+ do 
+ { 
+    num=+prompt('Введите положительное число');
+    count++
+    
+  } while (num>0);
+  console.log(`Вы ввели ${count} положительных чисел`);*/
+
+/* Задача 5*/
+/* let startX, endX, y;
+while (true)
+{
+    startX=+prompt('Введите начало промежутка');
+    endX=+prompt('Введите конец промежутка');
+    if (isNaN(startX) || isNaN (endX)
+         || !Boolean(startX) || !Boolean(endX)
+         ||  startX>endX)
+        {
+            console.log('eRROR');
+        }
+    else break;
+  }
+  for (let x=startX; x<endX; x++) 
+    {
+     y=x**2;
+     console.log(`x=${x},   y=${y}`);   ;
+    } */
+
+    /* let startX, endX, y;
+    startX=+prompt('Введите начало промежутка');
+    endX=+prompt('Введите конец промежутка');
+    if (isNaN(startX) || isNaN (endX) || !Boolean(startX) || !Boolean(endX));
+      else if (startX>endX)
+        {
+            console.log('Вы ввели некорректные значениямы поменяли их местами');
+            let tmp=startX;
+            startX=endX;
+            endX=tmp;
+        }
+   for (let x=startX; x<endX; x++) 
+    {
+     y=x**2;
+     console.log(`x=${x},   y=${y}`);   ;
+    } */
+
+    /* let countNegative=0, countPositive=0, num;
+    let sumNegative=0, sumPositive=0;
+    while (num!=0)
+        {
+            num=+prompt();
+            if (num>0)
+            {
+                countPositive++;
+                sumPositive+=num
+            }
+            if (num<0)
+        {
+            countNegative++;
+            sumNegative+=num
+        }
+    }
+            console.log(countNegative, countPositive);
+            console.log(sumNegative, sumPositive); */
+//произведение всех чисел кратных 3-м на промежутке от 10 до 30
+            let p=1;
+            while(true)
+            {
+              a=+prompt();
+              b=+prompt();
+              if (a>b || isNaN(a) || isNaN(b))  
+              console.log("Error");
+            else break;
+            }
+for (let i=13-13%3; i<=30; i++)
+{
+    if (i%3==0) p*=i;
+}
+console.log(p);
+
+    </script> 
+</body>
+</html>

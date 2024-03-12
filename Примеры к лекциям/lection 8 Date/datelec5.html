@@ -1,0 +1,18 @@
+<meta charset="utf-8">
+<script>
+    let data=new Date();
+    let mes= new Array("январь", "февраль", "март","апрель", "май","июнь","июль", "август", "сентябрь", "октябрь","ноябрь","декабрь");
+    let den= new Array("воскресенье","понедельник", "вторник", "среда","четверг", "пятница", "суббота");
+    dat(data);
+    function dat(data)
+    {
+        let god=data.getFullYear();
+        data.setFullYear(god-100);
+        let num=data.getMonth();
+        let month=mes[num];
+        num=data.getDay();
+        let day=den[num];
+        let chislo=data.getDate();
+        alert("сегодня "+data.getFullYear()+" год, месяц "+month+", "+day+", "+chislo+"-ое число")
+    }
+</script>

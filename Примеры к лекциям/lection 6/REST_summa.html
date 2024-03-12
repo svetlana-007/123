@@ -1,0 +1,10 @@
+<script>
+    //посчитать стоимость заказа товара
+    function priceZakaz(price,...quantity)
+    {
+        let sum=quantity.reduce((sum,elem)=>sum+elem*price,0);
+        return sum;
+    }
+   
+    console.log(priceZakaz(10,2,3,4,5));
+</script>

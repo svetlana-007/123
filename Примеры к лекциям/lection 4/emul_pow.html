@@ -1,0 +1,19 @@
+<script>
+    function pow(num,stepen)
+    {
+        let p=1;
+        for (let i=0;i<stepen;i++)
+            p*=num;
+        return p;
+    }
+
+    let num=prompt("Введите число");
+    let stepen=prompt("введите степень");
+    if (!isNaN(num) && !isNaN(stepen) && stepen>=0)
+    {
+        let pAnother=pow(num,stepen);
+        console.log(`${num}^${stepen}=${pAnother}`);
+    }
+    else
+        alert("Числа введены не верно");
+</script>

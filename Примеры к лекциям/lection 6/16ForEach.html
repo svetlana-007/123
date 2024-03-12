@@ -1,0 +1,19 @@
+<script>
+    arrMain=Array.from(Array(10),()=>{return Math.round(Math.random()*10-5)});
+    let count=0;
+    arrMain.forEach((elem)=>{
+        if(elem>0) count++;
+    });
+    console.log(arrMain.toString());
+    console.log(count);
+
+    count=0;
+    function calcNegative(elem)
+    {
+        if(elem>0) count++;
+        return count;
+    }
+    console.log(arrMain.toString());
+    arrMain.forEach(calcNegative);
+    console.log(count);
+</script>

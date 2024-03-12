@@ -1,0 +1,19 @@
+<script>
+    //Создает массив на основе имеющегося, исключая все нули
+    let arr=[1,0,3,0,2,3,0,4];
+    let newAr=arr.filter(index=>index!=0);
+    console.log(newAr.toString());
+</script>
+<script>
+    function isBall(ball)
+    {
+        if (ball>=1 && ball<6)
+        return true;
+        else
+        return false;
+    }
+    arr=[3,6,3,10,2,3,0,4];
+    newAr=arr.filter(isBall);
+    console.log(newAr.toString());
+    </script>
+       

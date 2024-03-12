@@ -1,0 +1,27 @@
+<script>
+let result = [];
+for (let i = 0; i < 5; i++) {
+  result[i] = function () {
+    return i;
+  };
+}
+result.forEach(elem=>console.log(elem()));
+
+let j;
+for (j = 0; j < 5; j++) {
+  result[j] = function () {
+    return j;
+  };
+}
+result.forEach(elem=>console.log(elem()));
+
+let i=0;
+while(i<5)
+{
+    result[i] = function () {
+    return i;
+    };
+    i++;
+}
+result.forEach(elem=>console.log(elem()));
+</script>

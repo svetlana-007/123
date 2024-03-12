@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arrUrl=["ya.ru","mail.ru","dns.ru","mvideo.ru"];
+        let ul=document.createElement("ul");
+        document.body.append(ul);
+        arrUrl.forEach(function(elem){
+            li=document.createElement("li");
+            li.innerHTML=elem;
+            ul.append(li);
+        });
+    </script>
+</body>
+</html>

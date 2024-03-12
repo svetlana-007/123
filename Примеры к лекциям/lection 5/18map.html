@@ -1,0 +1,16 @@
+<script>
+    //Преобразовать все первые буквы слова в предложении в заглавные
+    let str=prompt("Введите предложение");
+    if (Boolean(str))
+    {
+        //Разбиваем строку в массив по пробелам
+        let arrStr=str.split(" ");
+        //убираем все лишние пробелы
+        arrStr=arrStr.filter(elem=>elem!="");
+        //Преобразуем каждый элемент, делая первый символ заглавным и дописывая все остальные
+        arrStr=arrStr.map(elem=>elem[0].toUpperCase()+elem.substring(1,elem.legth));
+        //соединяем в строку
+        str=arrStr.join(" ");
+        console.log(str);
+    }
+</script>

@@ -1,0 +1,6 @@
+<script>
+    let str = "1 индейка стоит $30";
+    alert( str.match(/(?<=\$)\d+/) ); 
+    str = "2 индейки стоят $60";
+    alert( str.match(/(?<!\$)\d+/) ); // 2 
+</script>

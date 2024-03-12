@@ -1,0 +1,19 @@
+<script>
+    //Функция возведения числа в степень
+    function pow(num,stepen)
+       {
+            let p=1;
+            for (let i=0;i<stepen;i++)
+                p*=num;
+        return p;
+   }
+    let num=prompt("Введите число");
+    let stepen=prompt("введите степень");
+    if (!isNaN(num) && !isNaN(stepen) && stepen>=0)
+        {
+            console.log(`${num}^${stepen}=${pow(num,stepen)}`);
+        }
+    else
+        alert("Числа введены не верно");
+    </script>
+    

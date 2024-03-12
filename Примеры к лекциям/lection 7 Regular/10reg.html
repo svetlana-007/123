@@ -1,0 +1,16 @@
+<script>
+    function isPredl(str)
+        {
+        let re = /^[A-Z].+[!?.]$/;
+        let flag=re.test(str);
+        return flag;
+        }
+
+        let str=prompt("Введите предложение");
+        if (isPredl(str))
+            alert("Строка введена правильно");
+        else
+            alert("Строка введена неправильно");
+        
+
+</script>

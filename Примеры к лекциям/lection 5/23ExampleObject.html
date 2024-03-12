@@ -1,0 +1,53 @@
+<script>
+    let arrObjectsList=[
+    {
+        id:1,
+        fio:"Иванов Петр Сергеевич",
+        salary:20000
+    },
+    {
+        id:2,
+        fio:"Сидоров Валерий Иванович",
+        salary:25000
+    },
+    {
+        id:3,
+        fio:"Петрова Ольга Семеновна",
+        salary:100000
+    }
+]
+let resultArr=[];
+/*arrObjectsList.forEach(elem=>{
+    let str='';
+    Object.keys(elem).forEach(key=>
+    {
+        str+=`${key}:${elem[key]},`;
+    });
+    resultArr.push(str);
+});
+console.log(resultArr);*/
+
+
+/*arrObjectsList.forEach(elem=>{
+    let str='';
+    keys=Object.keys(elem);
+    values=Object.values(elem);
+   for (let i=0;i<keys.length;i++)
+    {
+        str+=`${keys[i]}:${values[i]}`;
+        if (i!=keys.length-1) 
+        str+=",";
+    }
+    resultArr.push(str);
+});
+console.log(resultArr);
+*/
+arrObjectsList.forEach(elem=>{
+    let str='';
+for ([key, value] of Object.entries(elem)) {
+  str+=`${key}: ${value},`;
+}
+resultArr.push(str);
+});
+console.log(resultArr);
+</script>

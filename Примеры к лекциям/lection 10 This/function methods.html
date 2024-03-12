@@ -1,0 +1,13 @@
+<script>
+    function testThis(){
+        console.log(this);
+    }
+
+    testThis();
+
+    let testObjThis={
+        showThis:testThis
+    }
+
+    testObjThis.showThis();
+</script>

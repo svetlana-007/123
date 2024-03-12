@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="radio" name="radio" id="r[0]"><input type="text">
+    <input type="radio" name="radio" id="r[1]"><input type="text">
+    <input type="radio" name="radio" id="r[2]"><input type="text">
+    <input type="radio" name="radio" id="r[3]"><input type="text">
+    <input type="radio" name="radio" id="r[4]"><input type="text">
+    <script>
+        //First variant
+        /*document.onclick=function(){
+            elem=event.target;
+            if (elem.type=="radio")
+            {
+                elem.nextElementSibling.value="hello";
+            }
+            
+        }*/
+    </script>
+    <script>
+        //second variant
+        let radios=document.querySelectorAll("input[type='radio']");
+        prevElemText=radios[0].nextElementSibling;
+        
+        for (let i=0;i<radios.length;i++)
+        {
+            radios[i].onclick=function(){
+                prevElemText.value="";
+                radios[i].nextElementSibling.value="world";
+                prevElemText=radios[i].nextElementSibling;
+            }
+        }
+    </script>
+</body>
+</html>

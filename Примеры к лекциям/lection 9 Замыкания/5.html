@@ -1,0 +1,13 @@
+<script>
+    function makeFunc() {
+      let name = "Mozilla";
+	  function displayName() {
+  		  alert(name);//Видит переменную из своего внешнего окружения
+ 	  }
+  return displayName;
+}
+
+var myFunc = makeFunc();//получает значение – функцию displayName
+myFunc();//выводит Mozilla, так как переменная name попала в лексическое окружение функции displayName
+
+</script>

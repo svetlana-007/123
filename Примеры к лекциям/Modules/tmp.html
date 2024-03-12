@@ -1,0 +1,13 @@
+<script>
+let a=prompt('Введите начальное значение x');
+let b=prompt('Введите конечное значение x');
+if ((isNaN(a) || isNaN(b)) || b<a)
+alert('Input Error');
+else {
+let i=0;
+for (let i=a; i<=b; i++)
+{
+console.log((i**2 + 1)-((i**3 + 2) / i));
+}
+}
+</script> 

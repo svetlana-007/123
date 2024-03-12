@@ -1,0 +1,13 @@
+<script>
+    function isNaNInArray(arr)
+    {
+        return arr.some(elem=>isNaN(elem));
+    }
+
+    arrMain=['1','2','5','4'];
+    if (isNaNInArray(arrMain))
+        alert("yes");
+    else
+        alert("no");
+
+</script>

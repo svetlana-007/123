@@ -1,0 +1,14 @@
+<script>
+function getAdd(x) {
+  return function (y) {
+    return x + y;
+  };
+}
+
+let add5 = getAdd(5);//x=5
+let add10 = getAdd(10);//x=10
+
+console.log(add5(2)); // x=5,y=2, водит 7
+console.log(add10(2)); // x=10, y=2, выводит 12
+
+</script>

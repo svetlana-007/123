@@ -1,0 +1,10 @@
+<script>
+    function discount(discount) {
+    return (price) => {
+        return price * discount;
+    }
+}
+console.log(discount(0.1)(500));
+console.log(discount(0.1)(1000));
+console.log(discount(0.2)(300));
+</script>

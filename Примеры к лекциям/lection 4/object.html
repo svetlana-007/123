@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let messages={
+            'error':"Вы допустили ошибку",
+            'success':"Все прошло успешно",
+            'check':function(n){
+                if (n==4) console.log(this.success);
+                else console.log(messages.error);
+            }
+        }
+        let user=prompt("Вычислите 2*2");
+        messages.check(user);
+        /*if (user==4) console.log(messages.success);
+        else console.log(messages.error);*/
+
+    </script>
+</body>
+</html>

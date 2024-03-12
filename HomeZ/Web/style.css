@@ -1,0 +1,9 @@
+
+
+header {
+    display: flex;
+    justify-content: space-around;
+    height: 80 px;
+    box-shadow: 0 5px 15 px lightgray;
+
+}

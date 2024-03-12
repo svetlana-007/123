@@ -1,0 +1,26 @@
+<script>
+    let arrMain=[];
+    while(true)
+    {
+        let num=prompt("Введите размерность вложенного массива");
+        if (isNaN(num) || num<=0) alert("Input error");
+        else{
+            arrOne=Array.from(Array(+num),()=>{return Math.round(Math.random()*10)});
+            arrMain.push(arrOne);
+            let isExit=!confirm("Продолжить заполнение массива?");
+            if (isExit) break;
+        }
+    }
+    console.log(arrMain);
+    let max=0;
+    let min=1000;
+    for(elem of arrMain){
+        for(item of elem){
+            if(item>max) max=item;
+        }
+        if (min>max) min=max;  
+        max=0;
+        
+    };
+    console.log(min);
+</script>

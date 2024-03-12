@@ -1,0 +1,16 @@
+<script>
+
+    let str=prompt("Введите строку, мы поищем в ней трехназчные числа");
+
+    let isXXX=function(str){
+        let re=/\d{3}/g;
+        console.log(str.match(re));
+        if (str.match(re).length>0) return true;
+        else return false;
+        
+    }
+    console.log(str);
+    console.log(isXXX(str));
+
+
+</script>

@@ -1,0 +1,15 @@
+<script>
+    function findNegative(cnt,elem) 
+    {
+        if (elem<0)
+            cnt++;
+        return cnt;
+    }
+
+    let arr = Array.from(Array(10),()=>{return Math.round(Math.random()*20-10)});
+    console.log(arr.toString());
+    let summa = arr.reduce((sum, elem) => sum + elem, 0);
+    let count = arr.reduce(findNegative,0);
+    console.log(`summa=${summa}`);
+    console.log(`count=${count}`);
+</script>

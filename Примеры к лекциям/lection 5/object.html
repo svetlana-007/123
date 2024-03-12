@@ -1,0 +1,19 @@
+    <script>
+        let messages={
+            'error':"Вы допустили ошибку",
+            'success':"Все прошло успешно",
+            'check':function(ans,solut){
+                if (ans==solut) console.log(this.success);
+                else console.log(messages.error);
+            }
+        }
+
+        let rand=(a,b)=>Math.round(Math.random()*(b-a)+a);
+        num1=rand(2,10);
+        num2=rand(2,10);
+        let user=prompt(`Вычислите ${num1}*${num2}`);
+        messages.check(user,num1*num2);
+        /*if (user==4) console.log(messages.success);
+        else console.log(messages.error);*/
+
+    </script>

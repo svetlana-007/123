@@ -1,0 +1,15 @@
+<script>
+
+function isSymbol(str)
+        {
+        let re = /^\w+$/;
+        return str.search(re);
+        }
+
+let str=prompt("Введите предложение");
+if (isSymbol(str)!=-1)
+    alert("Строка введена правильно");
+else
+    alert("Строка введена неправильно");
+        
+</script>

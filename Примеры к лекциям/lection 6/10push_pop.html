@@ -1,0 +1,30 @@
+<script>
+    //заполнение массива пользователем только положительными числами
+    let arr=[];
+    while(true)
+    {
+        let x=prompt("Введите число");
+        if (!isNaN(x))
+        {
+            if (x>0)
+                arr.push(x);
+        }
+        if (!confirm("Внести еще один элемент?")) break;
+    }
+    console.log(arr.toString());
+    console.log(`Длина массива ${arr.length}`);
+    //Удаление из массива элементов
+    while(true)
+    {
+        if (confirm("Удалить еще один элемент?"))
+        {
+            arr.pop(); 
+            if (arr.length==0) break;
+        }
+        else
+            break;
+       
+    }
+    console.log(arr.toString());
+    console.log(`Длина массива ${arr.length}`);
+</script>

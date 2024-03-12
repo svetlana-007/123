@@ -1,0 +1,14 @@
+<script>
+    function isElem(elem,arr)
+    {
+        return arr.includes(elem);
+    }
+
+    arrMain=Array.from(Array(10),()=>{return Math.round(Math.random()*10)});
+    alert(arrMain.toString());
+    let element=prompt("Что ищем?");
+    //Метод использует строгое сравнение ===, поэтому надо привести тип
+    if(isElem(+element,arrMain))
+        alert("yes");
+    else    alert("no");
+</script>

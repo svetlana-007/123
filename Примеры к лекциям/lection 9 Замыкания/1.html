@@ -1,0 +1,15 @@
+<script>
+    let a="Глобальная для скрипта переменная";
+    while (true)
+    {
+        let str="Переменная определена и видна только в цикле";
+        if (!confirm("Переменную str можно использовать за пределами цикла?")) break;
+    }
+    sayHello();
+    alert(`Попытка обратиться к переменной вне блока и вне функции. message=${message} и str=${str}`);
+    function sayHello()
+    {
+        let message="Эта строка вне функции не существует";
+        alert(message);
+    }
+</script>

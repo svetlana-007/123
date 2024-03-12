@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Z5</title>
+</head>
+<body>
+    <script>
+        // Из заданного массива формируем новый массив из элементов старого
+/*let num;
+//let numbers=[1,2,3,4]; аналогичный результат при числовом задании и задании строкой
+let numbers='1234';
+let array=Array.from(numbers, (n)=> n**2);
+console.log(array);
+*/
+let n=Math.round(Math.random()*21+1);
+let arr=new Array();
+for (let i=0;i<n; i++)
+{
+    arr[i]=Math.round(Math.random()*100-50);
+}
+console.log(arr);
+
+for (elem of arr)
+{
+    
+    elem=-elem;
+    console.log(elem);
+}
+console.log("Is array are changed?");
+for (let i=0;i<n;i++)
+{
+    arr[i]=-arr[i];
+}
+for (elem of arr) {
+    console.log(elem);
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+<script>
+    function Menu(...navList){
+        this.navList=navList;
+    }
+
+    let mainMenu=new Menu("home.html","services.html","price.html","about.html");
+    for (elem of mainMenu.navList)
+        console.log(elem);
+
+    let footerMenu=new Menu("newPage.html","checkPage.html","seoPage.html");
+    for (elem of footerMenu.navList)
+        console.log(elem);
+</script>

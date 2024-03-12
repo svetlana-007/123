@@ -1,0 +1,30 @@
+<script>
+    let x=prompt("Введите x");
+    let y=prompt("Введите y");
+    if (isNaN(x) || isNaN(y))
+        alert("Введены не числа");
+    else{
+        if (x>0 && y>0)
+	    console.log("Первый квадрант");
+        if (x<0 && y>0)
+            console.log("Второй квадрант");
+        if (x<0 && y<0)
+            console.log("Третий квадрант");
+        if (x>0 && y<0)
+            console.log("Четвертый квадрант");
+    }
+    if (!isNaN(x) && !isNaN(y))
+    {
+        if (x>0 && y>0)
+	    console.log("Первый квадрант");
+        if (x<0 && y>0)
+            console.log("Второй квадрант");
+        if (x<0 && y<0)
+            console.log("Третий квадрант");
+        if (x>0 && y<0)
+            console.log("Четвертый квадрант");
+    }
+    else{
+        alert("Введены не числа");
+    }
+</script>

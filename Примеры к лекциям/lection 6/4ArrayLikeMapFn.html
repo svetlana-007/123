@@ -1,0 +1,13 @@
+<script>
+    //запросить число и записать в массив четные цифры, нечетные заменить нулями
+    let num;
+    while(true)
+    {
+        num=prompt("Input number");
+        if (isNaN(num))
+            alert("Error Format Number");
+        else break;
+    }
+    let arrNum=Array.from(num,n=>(n%2==0)?n:0);
+    console.log(arrNum);
+</script>

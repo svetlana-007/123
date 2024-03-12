@@ -1,0 +1,16 @@
+<script>
+
+    function Admin(login,password){
+        this.login=login;
+        this.password=password;
+    }
+    Admin.prototype.chekLog=function(status,log,pwd)
+        {
+            if(this.login==log && this.password==pwd)
+                console.log(`Welcome ${this.login} for ${status}`);
+            else console.log(`Unknown login or password for ${status}`);
+        }
+    
+    let admin=new Admin("Peter","qwerty");
+    admin.chekLog("admin","Peter","qwerty");
+</script>

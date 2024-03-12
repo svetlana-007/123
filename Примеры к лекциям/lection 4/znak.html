@@ -1,0 +1,12 @@
+<script>
+    function getZnak(num)
+    {
+        if (num>0) return "+";
+        if (num==0) return "0";
+        if (num<0) return "-";
+    }
+
+    let num=prompt("Введите число");
+    if (isNaN(num)) alert("Формат ввода ошибочен");
+    else console.log(`Число имеет знак ${getZnak(num)}`);
+</script>

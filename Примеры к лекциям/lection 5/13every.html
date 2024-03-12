@@ -1,0 +1,13 @@
+<script>
+    function isNumberArray(arr)
+    {
+        return arr.every(elem=>!isNaN(elem));
+    }
+
+    arrMain=['1','2','5','4'];
+    if (isNumberArray(arrMain))
+        alert("yes");
+    else
+        alert("no");
+
+</script>

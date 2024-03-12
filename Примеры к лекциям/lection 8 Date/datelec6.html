@@ -1,0 +1,12 @@
+<script>
+    //Напишите функцию, которая параметром будет принимать секунды, а возвращать количество суток, соответствующих этим секундам.
+    let secunds=prompt("Введите количество секунд");
+    if(Number.isInteger(secunds) || secunds<0)
+    {
+        alert("Input Error");
+    }
+    else{
+        let days=secunds/(60*60*24);
+        alert(days.toFixed(1));
+    }
+</script>

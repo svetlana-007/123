@@ -1,0 +1,8 @@
+<script>
+    let str = prompt("Введите любую строку со знаками препинания:");
+        alert(withSpace(str));
+ 
+        function withSpace(str) {
+            return str.replace(/(\p{Po}(?=\S))/gu, "$1 ");
+        }
+</script>

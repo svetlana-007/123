@@ -1,0 +1,14 @@
+<script>
+arr=[5,4,8,2,3,8,9];
+newArr=arr.map(elem=>elem*2);
+console.log(newArr.toString());
+arr=[5,4,8,2,3,8,9];
+newArr=arr.map(function(elem){
+	if (elem>3)
+		return elem*2;
+	else 
+		return elem*3;
+});
+console.log(newArr.toString());
+
+</script>

@@ -1,0 +1,11 @@
+<script>
+    let x=Number(prompt("Введите значение x"));
+    if (isNaN(x))
+        console.log("Ввод не корректен");
+        else{
+            if (Math.sin(x)*Math.sin(x+1)<=0)
+                console.log("Корень есть");
+            else
+                console.log("Корня нет");
+        }
+</script>

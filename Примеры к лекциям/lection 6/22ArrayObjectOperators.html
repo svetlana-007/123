@@ -1,0 +1,34 @@
+<script>
+    let arrObjectsList=[
+    {
+        id:1,
+        fio:"Иванов Петр Сергеевич",
+        salary:20000
+    },
+    {
+        id:2,
+        fio:"Сидоров Валерий Иванович",
+        salary:25000
+    },
+    {
+        id:3,
+        fio:"Петрова Ольга Семеновна",
+        salary:100000
+    }
+]
+arrObjectsList.forEach(elem=>{
+    for (key in elem)
+    {
+        console.log(key);
+        console.log(elem[key]);
+    }
+});
+arrObjectsList.forEach(elem=>{
+    Object.keys(elem).forEach(key=>
+    {
+        console.log(key);
+        console.log(elem[key]);
+    });
+});
+
+</script>

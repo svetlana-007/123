@@ -1,0 +1,11 @@
+<script>
+ let foo = {
+    baz: function() {
+    console.log(this);
+     }
+ }
+ 
+foo.baz(); 
+let bar = foo.baz;
+ bar(); 
+</script>
